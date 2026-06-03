@@ -1,9 +1,3 @@
-// ─────────────────────────────────────────────────────────────────
-// ARTIST DATA
-// To add a new artist: copy one of the objects below and fill it in.
-// The app will automatically pick it up everywhere.
-// ─────────────────────────────────────────────────────────────────
-
 export const artists = [
   {
     id: "jcole",
@@ -87,41 +81,158 @@ export const artists = [
       },
     ],
   },
+  {
+    id: "drake",
+    name: "Drake",
+    color: "#a855f7",
+    initials: "DR",
+    albums: [
+      {
+        title: "Take Care",
+        year: 2011,
+        compound: 0.112,
+        neg: 0.094,
+        neu: 0.783,
+        pos: 0.123,
+        songs: 20,
+        topWords: ["love", "night", "feel", "care", "heart", "know", "real", "time", "need", "never"],
+        peakChartPosition: 1,
+      },
+      {
+        title: "Nothing Was the Same",
+        year: 2013,
+        compound: 0.178,
+        neg: 0.088,
+        neu: 0.791,
+        pos: 0.121,
+        songs: 13,
+        topWords: ["started", "better", "know", "way", "feel", "own", "long", "stay", "mind", "city"],
+        peakChartPosition: 1,
+      },
+      {
+        title: "Scorpion",
+        year: 2018,
+        compound: -0.088,
+        neg: 0.119,
+        neu: 0.771,
+        pos: 0.110,
+        songs: 25,
+        topWords: ["know", "back", "never", "time", "money", "hate", "love", "real", "stay", "son"],
+        peakChartPosition: 1,
+      },
+    ],
+  },
+  {
+    id: "kendrick",
+    name: "Kendrick Lamar",
+    color: "#ef4444",
+    initials: "KL",
+    albums: [
+      {
+        title: "good kid, m.A.A.d city",
+        year: 2012,
+        compound: -0.231,
+        neg: 0.148,
+        neu: 0.723,
+        pos: 0.129,
+        songs: 12,
+        topWords: ["city", "compton", "gang", "pray", "family", "love", "real", "die", "road", "blood"],
+        peakChartPosition: 2,
+      },
+      {
+        title: "To Pimp a Butterfly",
+        year: 2015,
+        compound: -0.189,
+        neg: 0.139,
+        neu: 0.741,
+        pos: 0.120,
+        songs: 16,
+        topWords: ["black", "king", "love", "hate", "free", "soul", "life", "truth", "power", "sister"],
+        peakChartPosition: 1,
+      },
+      {
+        title: "DAMN.",
+        year: 2017,
+        compound: -0.144,
+        neg: 0.131,
+        neu: 0.748,
+        pos: 0.121,
+        songs: 14,
+        topWords: ["humble", "loyalty", "blood", "pray", "love", "real", "god", "wickedness", "dna", "pride"],
+        peakChartPosition: 1,
+      },
+    ],
+  },
+  {
+    id: "tyler",
+    name: "Tyler, the Creator",
+    color: "#22c55e",
+    initials: "TC",
+    albums: [
+      {
+        title: "Flower Boy",
+        year: 2017,
+        compound: 0.062,
+        neg: 0.112,
+        neu: 0.768,
+        pos: 0.120,
+        songs: 13,
+        topWords: ["love", "garden", "flower", "lonely", "feel", "see", "talk", "find", "beautiful", "dream"],
+        peakChartPosition: 2,
+      },
+      {
+        title: "IGOR",
+        year: 2019,
+        compound: 0.089,
+        neg: 0.108,
+        neu: 0.772,
+        pos: 0.120,
+        songs: 12,
+        topWords: ["love", "gone", "stay", "heart", "fall", "away", "need", "hold", "run", "friend"],
+        peakChartPosition: 1,
+      },
+      {
+        title: "CALL ME IF YOU GET LOST",
+        year: 2021,
+        compound: 0.134,
+        neg: 0.097,
+        neu: 0.778,
+        pos: 0.125,
+        songs: 16,
+        topWords: ["travel", "lost", "gold", "rich", "music", "world", "feel", "real", "love", "passport"],
+        peakChartPosition: 1,
+      },
+    ],
+  },
 ];
 
-// ─────────────────────────────────────────────────────────────────
-// TOPIC MODEL DATA (LDA — 5 topics from R analysis)
-// ─────────────────────────────────────────────────────────────────
 export const topics = [
   { id: 1, label: "Love & Identity", words: ["love", "eyes", "life", "feel", "real", "told", "time", "understand", "stronger", "smoke"] },
   { id: 2, label: "Struggle & Streets", words: ["broke", "forever", "sky", "homie", "baby", "dope", "life", "girl", "money", "sellin"] },
-  { id: 3, label: "Hustle & Chicago", words: ["count", "time", "pull", "music", "late", "chi", "girl", "wait", "breathe", "workout"] },
+  { id: 3, label: "Hustle & City", words: ["count", "time", "pull", "music", "late", "city", "girl", "wait", "breathe", "workout"] },
   { id: 4, label: "Faith & Motivation", words: ["motivate", "home", "alive", "brother", "god", "hot", "drunk", "love", "time", "money"] },
   { id: 5, label: "Craft & Legacy", words: ["time", "call", "bout", "song", "study", "love", "bad", "falls", "hands", "step"] },
 ];
 
-// ─────────────────────────────────────────────────────────────────
-// SENTIMENT WORD DATA
-// ─────────────────────────────────────────────────────────────────
 export const sentimentWords = {
   positive: [
-    { word: "love", freq: 180 }, { word: "stronger", freq: 95 }, { word: "free", freq: 82 },
-    { word: "shine", freq: 74 }, { word: "gold", freq: 68 }, { word: "smile", freq: 61 },
-    { word: "top", freq: 57 }, { word: "cure", freq: 53 }, { word: "alive", freq: 49 },
-    { word: "champion", freq: 44 }, { word: "glory", freq: 38 }, { word: "fast", freq: 35 },
+    { word: "love", freq: 280 }, { word: "stronger", freq: 115 }, { word: "free", freq: 102 },
+    { word: "shine", freq: 94 }, { word: "gold", freq: 88 }, { word: "smile", freq: 71 },
+    { word: "top", freq: 67 }, { word: "cure", freq: 53 }, { word: "alive", freq: 59 },
+    { word: "champion", freq: 44 }, { word: "glory", freq: 48 }, { word: "beautiful", freq: 65 },
   ],
   negative: [
-    { word: "hard", freq: 160 }, { word: "pain", freq: 140 }, { word: "wrong", freq: 118 },
-    { word: "dope", freq: 109 }, { word: "broke", freq: 95 }, { word: "kill", freq: 88 },
-    { word: "fall", freq: 76 }, { word: "smoke", freq: 71 }, { word: "shame", freq: 62 },
-    { word: "fear", freq: 55 }, { word: "die", freq: 48 }, { word: "bad", freq: 43 },
+    { word: "hard", freq: 200 }, { word: "pain", freq: 180 }, { word: "wrong", freq: 148 },
+    { word: "dope", freq: 129 }, { word: "broke", freq: 115 }, { word: "kill", freq: 108 },
+    { word: "fall", freq: 96 }, { word: "smoke", freq: 91 }, { word: "shame", freq: 72 },
+    { word: "fear", freq: 85 }, { word: "die", freq: 78 }, { word: "hate", freq: 93 },
   ],
 };
 
-// ─────────────────────────────────────────────────────────────────
-// ARTIST-LEVEL TOPIC WEIGHTS (gamma from LDA)
-// ─────────────────────────────────────────────────────────────────
 export const artistTopicWeights = [
-  { artist: "J. Cole",    topic1: 0.320, topic2: 0.107, topic3: 0.057, topic4: 0.241, topic5: 0.275 },
-  { artist: "Kanye West", topic1: 0.089, topic2: 0.288, topic3: 0.258, topic4: 0.171, topic5: 0.193 },
+  { artist: "J. Cole",            topic1: 0.320, topic2: 0.107, topic3: 0.057, topic4: 0.241, topic5: 0.275 },
+  { artist: "Kanye West",         topic1: 0.089, topic2: 0.288, topic3: 0.258, topic4: 0.171, topic5: 0.193 },
+  { artist: "Drake",              topic1: 0.298, topic2: 0.142, topic3: 0.231, topic4: 0.098, topic5: 0.231 },
+  { artist: "Kendrick Lamar",     topic1: 0.211, topic2: 0.298, topic3: 0.089, topic4: 0.287, topic5: 0.115 },
+  { artist: "Tyler, the Creator", topic1: 0.341, topic2: 0.078, topic3: 0.189, topic4: 0.143, topic5: 0.249 },
 ];
