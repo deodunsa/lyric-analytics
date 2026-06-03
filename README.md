@@ -1,8 +1,8 @@
-# Lyric Analytics 🎵
+# Lyric Analytics 
 
 > NLP-powered sentiment analysis, topic modeling, and lyrical comparison across hip-hop's greatest albums.
 
-**Live demo:** _(coming soon — deploy to Vercel or Netlify)_
+
 
 ---
 
